@@ -11,12 +11,14 @@
         <th>User ID</th>
         <th>Name</th>
         <th>E-Mail Address</th>
+        <th>Member Since</th>
     </tr>
     </thead>
     <tr th:each="user : ${users}">
         <td th:text="${user.id}"></td>
         <td th:text="${user.username}"></td>
         <td th:text="${user.email}"></td>
+        <td th:text="${user.joined}"></td>
     </tr>
 </table>
 

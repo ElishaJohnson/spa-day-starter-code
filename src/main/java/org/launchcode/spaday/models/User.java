@@ -27,6 +27,7 @@ public class User {
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
     public int getId() { return id; }
+    public String getJoined() { return joined.toString(); }
 
     @Override
     public String toString() { return username; }
